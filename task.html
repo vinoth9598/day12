@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+        <link rel="stylesheet" href="./taxk.css" type="text/css">
+        <style>
+            .container-fluid{
+                position:absolute;
+                min-width: 500px;
+                border:1px solid black;
+                padding: 2px 2px;
+                font-weight: normal;
+                box-sizing: content-box;
+                height: 600px;
+        
+            }
+            .row1{
+                text-align: center;
+                font-size: large;
+            }
+            .row2{
+                display:flex;
+                border: 1px solid black;
+                padding:20px;
+                margin: 50px;
+                margin-top:80px;
+            }
+            .col-6 .roww {
+                width:200px;
+                height:200px;
+            }
+
+            .col-6 .rowz{
+                
+                width:150px;
+                height:150px;
+            }
+           
+            .col-6 .row3{
+                text-align:center;
+                margin-top: 30px;
+            }
+            .row4{
+                text-align:right;
+                
+            }
+            .name, .email, .phone, .atten{
+                    padding:5px;
+            }
+            #seats{
+                margin-right: 130px;
+                
+            }
+            
+            button{
+                
+                text-align: right;
+                margin:20px;
+            }
+            /* responsive  */
+            @media (max-width:600px){
+                .container-fluid{
+                    display:gird;
+                    height:700px;
+                    
+                }
+                .roww ,.rowz{
+                    display:none;
+                }
+                   
+            }
+            @media (max-width:600px){
+                .row4{
+                    
+                    display:grid;
+                    font-size: small;
+                    text-align: left;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            
+            <div class="row1 ">
+                <p ><strong>Event 1</strong></p>
+                <p>Number of available seats: 23</p>
+            </div>
+            <div class="row2 ">
+                
+                <div class="col-6 h-100">
+                    <div class="roww border border-black  mx-3 my-5">
+                        <div class="rowz border border-black  mx-4 my-4 rounded-circle">
+                            <div class="row3  p-3 pt-4">
+                                Image
+
+                            </div>
+                        </div>
+
+                    </div>
+                        
+                </div>
+                <div class="col-6 ">
+                    <div class="row4 ">
+                        <form action="get">
+                            <div class="name">
+                                <label for="name">Name :</label>
+                                <input type="name" name="name" id="name" >
+                            </div>
+                            <div class="email">
+                                <label for="email">Email :</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div class="phone">
+                                <label for="phone">Phone No :</label>
+                                <input type="tel" name="phone" id="phone" maxlength="10" >
+                            </div>
+                            <div class="seats"> 
+                                <label for="seats" >Number of Seats :</label>
+                                <input type="number" name="seats" id="seats" value="2" min="1" max="2" >
+                            </div>
+                            <div class="atten">
+                                <label for="number">Number of Attendee 2 :</label>
+                                <input type="number" name="number" id="number"class>
+                            </div>
+                            <div class="rows">
+                                <button>Submit</button>
+                                <button>Cancel</button>
+                            </div>
+
+                        </form>
+
+                    </div>         
+                </div>
+            </div>
+
+            
+            
+
+        </div>
+           
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</html>
